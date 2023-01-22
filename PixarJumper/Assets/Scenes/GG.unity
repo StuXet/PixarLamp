@@ -195,6 +195,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LetterEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 158958883743362943, guid: 75d06cc2edd55ce4abb043e7ed0f99f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 158958884539586010, guid: 75d06cc2edd55ce4abb043e7ed0f99f5,
         type: 3}
       propertyPath: m_SpriteTilingProperty.border.w
@@ -235,6 +240,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158958884539586023, guid: 75d06cc2edd55ce4abb043e7ed0f99f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062242045182753008, guid: 75d06cc2edd55ce4abb043e7ed0f99f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7968394367929966833, guid: 75d06cc2edd55ce4abb043e7ed0f99f5,
         type: 3}
@@ -1490,7 +1505,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1435989205}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
