@@ -6,7 +6,7 @@ namespace TarodevController {
 
     public class PlayerController : MonoBehaviour, IPlayerController {
 
-        private Animation _anim = null;
+        private Animator _animator;
         private string playanim = "Jump";
 
         // Public for external hooks
@@ -57,7 +57,7 @@ namespace TarodevController {
             };
             if (Input.JumpDown) {
                 _lastJumpPressed = Time.time;
-                _anim.Play("Anim");
+                _animator.SetTrigger("Jump");
             }
         }
 
