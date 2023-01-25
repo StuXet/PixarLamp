@@ -1009,12 +1009,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6432609860406773168, guid: 42303504a4fc90a43bc5178df9876bf2,
         type: 3}
+      propertyPath: _groundLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6432609860406773168, guid: 42303504a4fc90a43bc5178df9876bf2,
+        type: 3}
       propertyPath: _characterBounds.m_Extent.y
       value: 1.34
       objectReference: {fileID: 0}
     - target: {fileID: 6432609860406773169, guid: 42303504a4fc90a43bc5178df9876bf2,
         type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6432609860406773169, guid: 42303504a4fc90a43bc5178df9876bf2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6432609860406773169, guid: 42303504a4fc90a43bc5178df9876bf2,
+        type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6432609860406773170, guid: 42303504a4fc90a43bc5178df9876bf2,
@@ -1272,7 +1287,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.81, y: 1.73}
   m_EdgeRadius: 0
 --- !u!1 &1363235657
 GameObject:

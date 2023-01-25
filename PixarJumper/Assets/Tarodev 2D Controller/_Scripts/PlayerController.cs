@@ -5,6 +5,10 @@ using UnityEngine;
 namespace TarodevController {
 
     public class PlayerController : MonoBehaviour, IPlayerController {
+
+        private Animation _anim = null;
+        private string playanim = "Jump";
+
         // Public for external hooks
         public Vector3 Velocity { get; private set; }
         public FrameInput Input { get; private set; }
@@ -20,7 +24,11 @@ namespace TarodevController {
         private bool _active;
         void Awake() => Invoke(nameof(Activate), 0.5f);
         void Activate() =>  _active = true;
-        
+
+        private void Start()
+        {
+        }
+
         private void Update() {
             if(!_active) return;
             // Calculate velocity
@@ -49,6 +57,7 @@ namespace TarodevController {
             };
             if (Input.JumpDown) {
                 _lastJumpPressed = Time.time;
+                _anim.Play("Anim");
             }
         }
 
