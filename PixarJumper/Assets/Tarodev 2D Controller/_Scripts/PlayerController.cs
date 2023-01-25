@@ -6,7 +6,7 @@ namespace TarodevController {
 
     public class PlayerController : MonoBehaviour, IPlayerController {
 
-        private Animator _animator;
+        [SerializeField]private Animator _animator;
         private string playanim = "Jump";
 
         // Public for external hooks
